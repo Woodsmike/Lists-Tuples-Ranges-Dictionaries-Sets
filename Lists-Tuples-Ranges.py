@@ -191,15 +191,22 @@
 # print(artist)
 # print(year)
 
-imelda = "More Mayhem", "Emilda May", 2011, (  # if the last index is a list you can append the list in a tuple
-    [(1, "Pulling the Rug"), (2, "Pyscho"), (3, "Mayhem"), (4, "Kentish Town Waltz")])
+# imelda = "More Mayhem", "Emilda May", 2011, (  # if the last index is a list you can append the list in a tuple
+#     [(1, "Pulling the Rug"), (2, "Pyscho"), (3, "Mayhem"), (4, "Kentish Town Waltz")])
+#
+# imelda[3].append((5, "All for you"))
+# title, artist, year, tracks = imelda
+#
+# print(title)
+# print(artist)
+# print(year)
+# for song in tracks:
+#     track, title = song
+#     print("\tTrack Number {}, Title {}".format(track, title))
 
-imelda[3].append((5, "All for you"))
-title, artist, year, tracks = imelda
+# ***************
+# Binary Number System
 
-print(title)
-print(artist)
-print(year)
-for song in tracks:
-    track, title = song
-    print("\tTrack Number {}, Title {}".format(track, title))
+for i in range(17):
+    print("{0:>2} in binary is {0:>8b}".format(i))  # binary
+    print("{0:>2} in hex is {0:>2x}".format(i))  # hex
