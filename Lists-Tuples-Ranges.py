@@ -159,8 +159,47 @@
 # *********************
 # Tuples -- immutable
 
-t = "A", "B", "C"
-print(t)
+# t = "A", "B", "C"
+# print(t)
+#
+# print("a", "b", "c")
+# print(("a", "b", "c"))
+#
+# welcome = "Welcome to my Nightmare", "Alice Cooper", 1975
+# bad = "Bad Company", "Bad Company", 1974
+# budgie = "Nightflight", "Budgie", 1981
+# imelda = "More Mayhem", "Emilda May", 2011, (
+#     (1, "Pulling the Rug"), (2, "Pyscho"), (3, "Mayhem"), (4, "Kentish Town Waltz"))
+#
+#
+# print(imelda)
+#
+# title, artist, year, tracks = imelda
+# print(tracks)
+# metallica = "Ride the Lightning", "Metallica", 1984
+#
+# print(metallica)
+# print(metallica[0])
+# print(metallica[1])
+# print(metallica[2])
+#
+# imelda = imelda[0], "Imelday", imelda[2]
+# print(imelda)
+#
+# title, artist, year = metallica
+# print(title)
+# print(artist)
+# print(year)
 
-print("a", "b", "c")
-print(("a", "b", "c"))
+imelda = "More Mayhem", "Emilda May", 2011, (  # if the last index is a list you can append the list in a tuple
+    [(1, "Pulling the Rug"), (2, "Pyscho"), (3, "Mayhem"), (4, "Kentish Town Waltz")])
+
+imelda[3].append((5, "All for you"))
+title, artist, year, tracks = imelda
+
+print(title)
+print(artist)
+print(year)
+for song in tracks:
+    track, title = song
+    print("\tTrack Number {}, Title {}".format(track, title))
